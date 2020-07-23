@@ -5,6 +5,7 @@ import './desktopTheme/index.css';
 import Window from './desktopEnvironment/window/window';
 import Taskman from './desktopEnvironment/taskMan/taskMan';
 import WorldNavigationMenu from './apps/worldNavigator/worldNavContent.jsx';
+import TextPad from './apps/otherApp/textpad.jsx';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -12,8 +13,9 @@ var i = 0;
 
 ReactDOM.render(
   <React.StrictMode>
-    <Window name='worldView' closeButton='invisible' title="WorldView.COE" windowNum={i++} content={<WorldNavigationMenu />} />
-    <Window name='worldView' closeButton='invisible' title="WorldView two" windowNum={i++} style={{left : '450px'}} content={<WorldNavigationMenu />} />
+    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content={<WorldNavigationMenu />} />
+    <Window name='worldView' closeButton='invisible' title="WorldView two" content={<WorldNavigationMenu />} />
+    <Window closeButton='closeButton' title='textPad.COE' content={<TextPad />} />
     <Taskman />
   </React.StrictMode>,
   document.getElementById('root')

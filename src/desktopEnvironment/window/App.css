@@ -1,4 +1,5 @@
 .window{
+  display: flexbox;
   width: 30vh;
   height: 30vh;
   margin-bottom: 50px;
@@ -7,8 +8,10 @@
   border-color: rgb(208, 229, 247);
 }
 .topBar{
-  height: 2vh;
+  font-size: 1vh;
   display: flex;
+  user-select: none;
+  height: 2vh;
   background-color: rgb(15, 108, 184);
 }
 .title{
