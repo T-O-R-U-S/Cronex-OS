@@ -4,7 +4,7 @@ import "./buttonCSS.css";
 function UiKitButton(props) {
     return (
       <div id="iconButton">
-          <button><img src={props.icon} alt=""/></button>
+          <button><img src={props.src} alt=""/></button>
       </div>
     );
   }

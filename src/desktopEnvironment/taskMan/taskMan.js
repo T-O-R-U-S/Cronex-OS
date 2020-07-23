@@ -1,11 +1,12 @@
 import React from "react";
 import UiKitButton from '../../systemUIKit/iconButton';
 import "./taskman.css";
+var icon = require('../../systemUIKit/images/icons/logo512.png');
 
 function Taskman(props) {
     return (
-      <div className="taskMan">
-        <UiKitButton icon="images/icons/logo512.png">Hello world!</UiKitButton>
+      <div id="taskMan">
+        <UiKitButton src={icon}>Hello world!</UiKitButton>
       </div>
     );
   }
