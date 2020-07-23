@@ -1,4 +1,5 @@
 .window{
+  position: absolute;
   height: 30vh;
   width: 30vw;
 }

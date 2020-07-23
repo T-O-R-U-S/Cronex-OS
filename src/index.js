@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './worldNav/worldNav';
+import App from './window/window';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name='worldView' closeButton='invisible'/>
+    <App name='worldView' closeButton='invisible' title="WorldView.COE" content= <p>Hello world!</p> />
   </React.StrictMode>,
   document.getElementById('root')
 );
