@@ -1,0 +1,26 @@
+.window{
+  height: 30vh;
+  width: 30vw;
+}
+.topBar{
+  height: 2vh;
+  display: flex;
+  background-color: rgb(15, 108, 184);
+}
+.title{
+  align-self: center;
+  padding-right: 3vw;
+}
+.buttons{
+  height: 2vh;
+  justify-content: flex-end;
+  align-self: center;
+}
+.contents{
+  background-color: antiquewhite;
+  overflow: auto;
+  height: 26vh;
+}
+#invisible{
+  display: none;
+}
