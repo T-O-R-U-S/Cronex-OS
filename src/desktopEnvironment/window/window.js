@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-function App(props) {
+function Window(props) {
   return (
     <div id={props.name} className="window">
       <span className="topBar">
@@ -17,4 +17,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default Window;

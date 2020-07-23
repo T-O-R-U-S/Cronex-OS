@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './window/window';
+import './desktopTheme/index.css';
+
+import Window from './desktopEnvironment/window/window';
+import Taskman from './desktopEnvironment/taskMan/taskMan';
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App name='worldView' closeButton='invisible' title="WorldView.COE" content= <p>Hello world!</p> />
+    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content=<p>Hello world!</p> />
+    <Taskman />
   </React.StrictMode>,
   document.getElementById('root')
 );
