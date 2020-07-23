@@ -4,12 +4,13 @@ import './desktopTheme/index.css';
 
 import Window from './desktopEnvironment/window/window';
 import Taskman from './desktopEnvironment/taskMan/taskMan';
+import WorldNavigationMenu from './apps/worldNavContent.jsx';
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content={<p>Hello world!</p>} />
+    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content={WorldNavigationMenu} />
     <Taskman />
   </React.StrictMode>,
   document.getElementById('root')
