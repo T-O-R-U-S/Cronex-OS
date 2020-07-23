@@ -3,7 +3,8 @@ import "./App.css";
 
 function Window(props) {
   return (
-    <div id={props.name} className="window">
+    <div className="window">
+    <div id={props.name} className={props.windowNum}>
       <span className="topBar">
           <p className="title">{props.title}</p>
           <button id={props.closeButton} className="buttons">X</button>
@@ -13,6 +14,7 @@ function Window(props) {
       <div className="contents">
         {props.content}
       </div>
+    </div>
     </div>
   );
 }

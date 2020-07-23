@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <noscript>CRONEX OS requires JavaScript!</noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>CRONEX OS</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+      margin: 0px;
+    }
+    body {
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>CRONEX OS requires JavaScript!</noscript>
+  <div id="root"></div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script async defer>
+    $(() => {
+      var i = 0;
+      $(".topBar").mousedown((e) => {
+        $(document).mousemove((event) => {
+          console.log(e.target);
+          $(e.target).parent().parent().css({
+            "top": event.pageY,
+            "left": event.pageX - 150
+          })
+        })
+      })
+      $(document).mouseup(() => {
+        $(document).off('mousemove');
+      })
+    });
+  </script>
+</body>
+
 </html>

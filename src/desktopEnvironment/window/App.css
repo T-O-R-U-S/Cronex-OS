@@ -1,7 +1,10 @@
 .window{
-  position: absolute;
+  width: 30vh;
   height: 30vh;
-  width: 30vw;
+  margin-bottom: 50px;
+  position: absolute;
+  border: 13px;
+  border-color: rgb(208, 229, 247);
 }
 .topBar{
   height: 2vh;
