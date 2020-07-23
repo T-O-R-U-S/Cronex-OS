@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content=<p>Hello world!</p> />
+    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content={<p>Hello world!</p>} />
     <Taskman />
   </React.StrictMode>,
   document.getElementById('root')
