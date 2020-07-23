@@ -5,7 +5,7 @@ import "./taskman.css";
 function Taskman(props) {
     return (
       <div className="taskMan">
-        <UiKitButton icon="../public/logo512.png"></UiKitButton>
+        <UiKitButton icon="images/icons/logo512.png">Hello world!</UiKitButton>
       </div>
     );
   }
