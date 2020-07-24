@@ -5,6 +5,7 @@ import './desktopTheme/index.css';
 import Window from './desktopEnvironment/window/window';
 import Taskman from './desktopEnvironment/taskMan/taskMan';
 import WorldNavigationMenu from './apps/worldNavigator/worldNavContent.jsx';
+import ChronicleMenu from './desktopEnvironment/chronicleMenu/menu.jsx';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -12,6 +13,7 @@ var i = 0;
 
 ReactDOM.render(
   <React.StrictMode>
+    <ChronicleMenu />
     <Window name='worldView' closeButton='invisible' title="WorldView.COE" content={<WorldNavigationMenu />} />
     <Taskman />
   </React.StrictMode>,

@@ -1,12 +1,13 @@
 import React from "react";
 import "./UIkit.css";
-
-function UiKitButton(props) {
+class UiKitButton extends React.Component {
+  render(){
     return (
       <div id="iconButton">
-          <button><img src={props.src} alt=""/></button>
+          <button><img src={this.props.src} alt=""/></button>
       </div>
     );
   }
+}
 
 export default UiKitButton;
