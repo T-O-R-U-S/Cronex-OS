@@ -1,7 +1,7 @@
 import React from "react";
 
 import ChronicleMenu from './chronicleMenu/menu.jsx';
-import Window from '../systemUIKit/UIkit.jsx';
+import { Window } from '../systemUIKit/UIkit.jsx';
 import Taskman from './taskMan/taskMan.js';
 
 import WorldNavigationMenu from './sysapp/worldNavigator/worldNavContent.jsx';
