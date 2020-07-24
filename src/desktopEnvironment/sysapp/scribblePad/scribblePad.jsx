@@ -3,9 +3,9 @@ import "./textpad.css";
 
 function ScribblePad(props){
     return(
-        <input>
+        <textarea>
 
-        </input>
+        </textarea>
     )
 }
 export default ScribblePad;

@@ -1,13 +1,43 @@
 import React from "react";
 import "./UIkit.css";
-class UiKitButton extends React.Component {
+export class UiKitButton extends React.Component {
+  // eslint-disable-next-line no-useless-constructor
+  constructor(props){
+    super(props);
+  }
   render(){
     return (
       <div id="iconButton">
-          <button onClick={this.props.function}><img src={this.props.src} alt=""/></button>
+          <button onClick={this.props.function} style={this.props.customTheme}><img src={this.props.src} alt="" /></button>
       </div>
     );
   }
 }
 
-export default UiKitButton;
+export class Window extends React.Component {
+  render() {
+    return (
+      <div id="windowContainer" className="window" style={this.props.customTheme}>
+        <div>
+          <span className="topBar">
+            <p className="title">{this.props.title}</p>
+            {this.props.noCloseButton ? null : (
+              <button id="leaveApp" className="buttons">
+                X
+              </button>
+            )}
+            <button id="fullScreen" className="buttons">
+              □
+            </button>
+            <button id="minimizeApp" className="buttons">
+              _
+            </button>
+          </span>
+          <div className="contents">{this.props.content}</div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Window;

@@ -2,18 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './desktopTheme/index.css';
 
-import Window from './desktopEnvironment/window/window';
-import Taskman from './desktopEnvironment/taskMan/taskMan';
-import WorldNavigationMenu from './apps/worldNavigator/worldNavContent.jsx';
-import ChronicleMenu from './desktopEnvironment/chronicleMenu/menu.jsx';
+import DesktopEnvironment from './desktopEnvironment/ide.jsx'
 
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChronicleMenu />
-    <Window name='worldView' closeButton='invisible' title="WorldView.COE" content={<WorldNavigationMenu />} />
-    <Taskman />
+    <DesktopEnvironment />
+    <div id="apps"></div>
   </React.StrictMode>,
   document.getElementById('root')
 );

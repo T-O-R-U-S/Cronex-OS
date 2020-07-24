@@ -11,3 +11,41 @@
     height: 30px;
     width: 30px;
 }
+
+#windowContainer .window{
+    background-color: antiquewhite;
+    top: 30px;
+    left: 10px;
+    display: flexbox;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    border: 2px;
+    border-style: ridge;
+    border-color: rgb(15, 108, 184);
+  }
+ #windowContainer .topBar{
+    font-size: 1vh;
+    display: flex;
+    user-select: none;
+    height: 2vh;
+    background-color: rgb(15, 108, 184);
+  }
+#windowContainer  .title{
+    align-self: center;
+    padding-right: 3vw;
+  }
+ #windowContainer .buttons{
+    font-size: 1vh;
+    height: 2vh;
+    justify-content: flex-end;
+    align-self: center;
+  }
+ #windowContainer .contents{
+    background-color: antiquewhite;
+    overflow: auto;
+    height: 26vh;
+  }
+  #invisible{
+    display: none;
+  }
