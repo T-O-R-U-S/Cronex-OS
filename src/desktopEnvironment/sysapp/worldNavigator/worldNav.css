@@ -1,0 +1,16 @@
+#buttonContainer {
+    float: 'left';
+    display: 'inline-block';
+    width: '15vh';
+    height: '28vh';
+    overflow-x: 'auto';
+    overflow-y: 'hidden';
+    white-space: 'nowrap';
+}
+
+.worldNavButton {
+    background-color: "blue";
+    justify-content: "center";
+    float: 'left';
+    white-space: 'nowrap';
+}

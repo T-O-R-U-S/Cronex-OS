@@ -1,8 +1,12 @@
 #taskMan{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
     position: absolute;
     bottom: 0px;
     padding-bottom: 20px;
     width: 100%;
     margin: 0px;
     padding: 0px;
+    background-color: aliceblue;
 }

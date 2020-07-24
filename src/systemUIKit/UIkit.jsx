@@ -19,7 +19,7 @@ export class Window extends React.Component {
     return (
       <div id="windowContainer" className="window" style={this.props.customTheme}>
         <div>
-          <span className="topBar">
+          <span className="topBar" style={this.props.topBarTheme}>
             <p className="title">{this.props.title}</p>
             {this.props.noCloseButton ? null : (
               <button id="leaveApp" className="buttons">
@@ -33,7 +33,7 @@ export class Window extends React.Component {
               _
             </button>
           </span>
-          <div className="contents">{this.props.content}</div>
+          <div className="contents" style={this.props.theme}>{this.props.content}</div>
         </div>
       </div>
     );
