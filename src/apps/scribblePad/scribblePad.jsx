@@ -1,11 +1,11 @@
 import React from 'react';
 import "./textpad.css";
 
-function TextPad(props){
+function ScribblePad(props){
     return(
         <input>
 
         </input>
     )
 }
-export default TextPad;
+export default ScribblePad;

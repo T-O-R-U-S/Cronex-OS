@@ -25,7 +25,6 @@
       var i = 0;
       $(".topBar").mousedown((e) => {
         $(document).mousemove((event) => {
-          console.log(e.target);
           $(e.target).parent().parent().css({
             "top": event.pageY,
             "left": event.pageX - 150

@@ -9,8 +9,6 @@ import ChronicleMenu from './desktopEnvironment/chronicleMenu/menu.jsx';
 
 import * as serviceWorker from './serviceWorker';
 
-var i = 0;
-
 ReactDOM.render(
   <React.StrictMode>
     <ChronicleMenu />

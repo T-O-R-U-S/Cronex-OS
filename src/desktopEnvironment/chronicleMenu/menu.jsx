@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './menu.css';
 
 class ChronicleMenu extends React.Component {
