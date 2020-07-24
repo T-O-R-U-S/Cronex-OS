@@ -1,4 +1,6 @@
 .window{
+  top: 30px;
+  left: 10px;
   display: flexbox;
   width: 30vh;
   height: 30vh;
@@ -19,6 +21,7 @@
   padding-right: 3vw;
 }
 .buttons{
+  font-size: 1vh;
   height: 2vh;
   justify-content: flex-end;
   align-self: center;

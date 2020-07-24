@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./textpad.css";
 
 function TextPad(props){
     return(
