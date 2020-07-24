@@ -16,7 +16,6 @@
     background-color: antiquewhite;
     top: 30px;
     left: 10px;
-    display: flexbox;
     width: 30vh;
     height: 30vh;
     position: absolute;
@@ -25,8 +24,9 @@
     border-color: rgb(15, 108, 184);
   }
  .topBar{
+     display: inline-flex;
+     width: 100%;
     font-size: 1vh;
-    display: flex;
     user-select: none;
     height: 2vh;
     background-color: rgb(15, 108, 184);
@@ -42,6 +42,7 @@
     align-self: center;
   }
  .contents{
+    display: flex;
     background-color: antiquewhite;
     overflow: auto;
     height: 28vh;

@@ -40,4 +40,4 @@ export class Window extends React.Component {
   }
 }
 
-export default UiKitButton;
+export default Window;
