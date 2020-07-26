@@ -9,13 +9,15 @@ import DesktopEnvironment from './desktopEnvironment/ide.jsx'
 import * as serviceWorker from './serviceWorker';
 import ScribblePad from './desktopEnvironment/sysapp/scribblePad/scribblePad';
 
-var winKey = 'a'
+var winKey = 'WINDOW'
 
 ReactDOM.render(
   <React.StrictMode>
     <DesktopEnvironment />
     <div id="apps">
-      {ScribblePad ? <Window title="scribPad.COE" content={<ScribblePad />} winKey={++winKey}/> : null}
+      {ScribblePad ? <Window title="scribPad.COE" content={<ScribblePad />} winID={winKey+Math.random()*10000000000000000}/> : null}
+      <Window title="scribPad.COE" content={<ScribblePad />} winID={winKey+Math.random()}/>
+      <Window title="scribPad.COE" content={<ScribblePad />} winID={winKey+Math.random()}/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')

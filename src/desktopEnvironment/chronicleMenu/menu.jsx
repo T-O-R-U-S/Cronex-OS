@@ -22,6 +22,7 @@ class ChronicleMenu extends React.Component {
       <div>
     <nav id="cMenu">
     <p>time: {this.state.date.toLocaleTimeString()}</p>
+    <p>Theme : Graphite</p>
     </nav>
     </div>
     )

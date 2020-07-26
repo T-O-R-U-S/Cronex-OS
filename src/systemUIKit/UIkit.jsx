@@ -17,7 +17,7 @@ export class UiKitButton extends React.Component {
 export class Window extends React.Component {
   render() {
     return (
-      <div id='winContainer' className={this.props.specialClass ? `${this.props.specialClass}` : "window"} style={this.props.customTheme}>
+      <div id='winContainer' className={this.props.specialClass ? `${this.props.specialClass}` : this.props.winID} style={this.props.customTheme}>
         <div>
           <span className="topBar" style={this.props.topBarTheme}>
             <p className="title">{this.props.title}</p>

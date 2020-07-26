@@ -1,8 +1,13 @@
 #cMenu{
+    display: flex;
     position: absolute;
     top: 0px;
     height: 2vh;
     width: 100%;
     background-color: white;
     text-shadow: 2px 2px rgb(235, 235, 235);
+}
+#cMenu p{
+    display: inline-flex;
+    margin-right: 40px;
 }
