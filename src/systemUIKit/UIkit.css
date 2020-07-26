@@ -23,6 +23,17 @@
     border-style: ridge;
     border-color: rgb(15, 108, 184);
   }
+  #winContainer{
+    background-color: antiquewhite;
+    top: 30px;
+    left: 10px;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    border: 2px;
+    border-style: ridge;
+    border-color: rgb(15, 108, 184);
+  }
  .topBar{
      display: inline-flex;
      width: 100%;

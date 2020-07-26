@@ -15,7 +15,7 @@ class desktopEnvironment extends React.Component {
       <div id="displayed">
         <ChronicleMenu />
         <div id="sysapps">
-            <Window title="wnm.COE" noCloseButton={true} content={<WorldNavigationMenu />} customTheme={customtheme} />
+            <Window title="wnm.COE" noCloseButton={true} content={<WorldNavigationMenu />} customTheme={customtheme} winKey={-1} specialClass="worldNvMenu"/>
         </div>
         <Taskman />
       </div>

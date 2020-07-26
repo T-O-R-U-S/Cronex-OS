@@ -14,20 +14,18 @@ export class UiKitButton extends React.Component {
   }
 }
 
-
-function closeWindow(){
-  document.querySelector('.window').remove();
-}
-
 export class Window extends React.Component {
   render() {
     return (
-      <div id={this.props.key} className="window" style={this.props.customTheme}>
+      <div id='winContainer' className={this.props.specialClass ? `${this.props.specialClass}` : "window"} style={this.props.customTheme}>
         <div>
           <span className="topBar" style={this.props.topBarTheme}>
             <p className="title">{this.props.title}</p>
+            
             {this.props.noCloseButton ? null : (
-              <button id="leaveApp" className="buttons" onClick={closeWindow}>
+              <button id="leaveApp" className="buttons" onClick={()=>{
+                document.querySelector(`.window`).remove()
+              }}>
                 X
               </button>
             )}

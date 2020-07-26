@@ -9,11 +9,13 @@ import DesktopEnvironment from './desktopEnvironment/ide.jsx'
 import * as serviceWorker from './serviceWorker';
 import ScribblePad from './desktopEnvironment/sysapp/scribblePad/scribblePad';
 
+var winKey = 'a'
+
 ReactDOM.render(
   <React.StrictMode>
     <DesktopEnvironment />
     <div id="apps">
-      {ScribblePad ? <Window title="scribPad.COE" content={<ScribblePad />} /> : null}
+      {ScribblePad ? <Window title="scribPad.COE" content={<ScribblePad />} winKey={++winKey}/> : null}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
