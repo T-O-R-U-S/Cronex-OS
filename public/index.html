@@ -21,10 +21,10 @@
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script async defer>
     $(() => {
-      var i = 0;
+      var i = 0n;
       setInterval(()=>$(".topBar").on('mousedown', (e) => {
         $(e.target).parent().parent().css({
-            "z-index": i+=1,
+            "z-index": i+=1n,
           })
         $(document).mousemove((event) => {
           $(e.target).parent().parent().css({
@@ -35,6 +35,11 @@
       }), 500)
       $(document).mouseup(() => {
         $(document).off('mousemove');
+      })
+      $("#winContainer").on('mousedown', (e)=>{
+        $(e.target).css({
+          "z-index": i+=1n,
+        })
       })
     });
   </script>

@@ -20,11 +20,11 @@ export class Window extends React.Component {
       <div id='winContainer' className={this.props.specialClass ? `${this.props.specialClass}` : this.props.winID} style={this.props.customTheme}>
         <div>
           <span className="topBar" style={this.props.topBarTheme}>
-            <p className="title">{this.props.title}</p>
+            <p className="title">{this.props.content.title}</p>
             
             {this.props.noCloseButton ? null : (
               <button id="leaveApp" className="buttons" onClick={()=>{
-                document.querySelector(`.window`).remove()
+                document.querySelector(`.${this.props.winID}`).remove()
               }}>
                 X
               </button>
